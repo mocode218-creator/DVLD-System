@@ -290,25 +290,6 @@ DVLD/
 4. **Written test**: unlocked after passing Vision
 5. **Street test**: unlocked after passing Written
 6. **Issue license**: right-click → Issue Driving License (First Time)
-
----
-
-## 📸 Screenshots
-
-> Add your screenshots to `docs/screenshots/` and they will show up here.
-
-| Login | Main Dashboard |
-|:-----:|:--------------:|
-| ![Login](docs/screenshots/login.png) | ![Main](docs/screenshots/main.png) |
-
-| Manage People | Local License Application |
-|:-------------:|:-------------------------:|
-| ![People](docs/screenshots/people.png) | ![Local](docs/screenshots/local.png) |
-
-| Schedule Test | License Info |
-|:-------------:|:------------:|
-| ![Test](docs/screenshots/test.png) | ![License](docs/screenshots/license.png) |
-
 ---
 
 ## 🧠 Core Business Logic
@@ -357,17 +338,6 @@ public enum enTestType
 | One active international license per driver | `clsInternationalLicense.GetActiveInternationalLicenseIDByDriverID` |
 | Only expired licenses can be renewed | `clsLicense.IsLicenseExpired` |
 | A detained license cannot be detained again | `clsLicense.IsDetained` |
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Hash passwords (e.g., PBKDF2/BCrypt) instead of storing plain text
-- [ ] Move the connection string to `App.config`
-- [ ] Use parameterized queries everywhere and add unit tests for the business layer
-- [ ] Role-based permissions
-- [ ] Export reports (PDF / Excel) and print license cards
-- [ ] Migrate to ASP.NET Core Web API + modern UI
 
 ---
 
